@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="contact-info">
+            <h2>Get in Touch</h2> <br>
+            <a href="mailto:email@example.com">email@example.com</a>
+            <br>
+            <a href="https://twitter.com/techcon" target="_blank">Twitter</a><br>
+            <a href="https://facebook.com/techcon" target="_blank">Facebook</a><br>
+            <a href="https://linkedin.com/company/techcon" target="_blank">LinkedIn</a>
+        </div>
+
+        <h2>Our Location</h2>
+        <iframe 
+            src="https://maps.app.goo.gl/S4BjoX6ERr28FBUq6" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+
+        <h2>Contact Us</h2>
+        <form action="/submit_contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
